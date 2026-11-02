@@ -1,4 +1,5 @@
 # ConnectaTel – Análisis de datos de telecomunicaciones
+
 1. Objetivo del proyecto
 
 Analizar el comportamiento de los clientes de ConnectaTel, una empresa de telecomunicaciones, con el propósito de identificar patrones de consumo, segmentar usuarios según su edad y nivel de uso, y generar recomendaciones comerciales que permitan mejorar la oferta de planes y fortalecer la relación con los clientes.
@@ -49,13 +50,13 @@ GitHub
 
 5. Cómo ejecutar el proyecto
 
-El análisis se encuentra documentado en el notebook analisis_connectatel.ipynb.
+El análisis se encuentra documentado en el notebook sprint7-final-project.ipynb.
 
 Para ejecutarlo:
 
 Acceder al repositorio de GitHub.
 
-Abrir el archivo analisis_connectatel.ipynb.
+Abrir el archivo sprint7-final-project.ipynb.
 
 Seleccionar la opción para abrirlo en Google Colab o descargarlo y cargarlo directamente en Colab.
 
@@ -81,13 +82,15 @@ Revisar la sección final del notebook para consultar los hallazgos y recomendac
 
 7. Principales hallazgos
 
-Los adultos representan el grupo de edad más numeroso, con aproximadamente el 49,1% de los usuarios.
+Los adultos representan el grupo de edad más numeroso, con 2.018 usuarios (50,45 %), seguidos por los adultos mayores con 1.222 (30,55 %) y los jóvenes con 760 (19 %).
 
-El 73,6% de los clientes pertenece al segmento de uso medio.
+El 73,58 % de los clientes pertenece al segmento de uso medio, mientras que el 19,48 % corresponde a bajo uso y el 6,95 % a alto uso.
 
 El uso medio predomina en los tres grupos de edad.
 
 Se identificaron usuarios con niveles elevados de consumo, que representan oportunidades para evaluar beneficios y paquetes adicionales.
+
+Se conservaron los valores atípicos de las variables de actividad, ya que no se encontró evidencia suficiente para considerarlos errores en los datos.
 
 8. Autoría
 
