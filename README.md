@@ -1,21 +1,37 @@
 # ConnectaTel – Análisis de datos de telecomunicaciones
-Descripción del proyecto
+1. Objetivo del proyecto
 
-Este proyecto tiene como objetivo analizar el comportamiento de los clientes de ConnectaTel, una empresa de telecomunicaciones, para identificar patrones de uso, segmentar clientes y encontrar oportunidades de mejora en la oferta comercial de sus planes.
+Analizar el comportamiento de los clientes de ConnectaTel, una empresa de telecomunicaciones, con el propósito de identificar patrones de consumo, segmentar usuarios según su edad y nivel de uso, y generar recomendaciones comerciales que permitan mejorar la oferta de planes y fortalecer la relación con los clientes.
 
-Objetivos
+2. Datasets utilizados
 
-Explorar y limpiar los datos de clientes y consumo.
+El análisis utiliza tres conjuntos de datos:
 
-Analizar patrones de uso de llamadas y mensajes.
+plans.csv: información sobre los planes de telecomunicaciones disponibles.
 
-Identificar valores atípicos y evaluar su comportamiento.
+users_latam.csv: información de los usuarios, incluyendo edad, ciudad, fecha de registro, plan contratado y fecha de cancelación.
 
-Segmentar clientes según su edad y nivel de consumo.
+usage.csv: registros de actividad de los usuarios, incluyendo llamadas, mensajes, duración y fechas de uso.
 
-Proponer recomendaciones comerciales basadas en los resultados.
+3. Etapas del análisis
 
-Herramientas utilizadas
+El proyecto se desarrolló en las siguientes etapas:
+
+Exploración de datos: revisión de la estructura, dimensiones, tipos de datos y estadísticas descriptivas de los datasets.
+
+Limpieza y preparación: identificación y tratamiento de valores nulos, registros inconsistentes y valores centinela.
+
+Análisis exploratorio: estudio de las variables de edad, mensajes, llamadas y minutos de consumo.
+
+Visualización de datos: elaboración de histogramas y diagramas de caja (boxplots) para identificar distribuciones y valores atípicos.
+
+Análisis de valores atípicos: aplicación del método del rango intercuartílico (IQR) para identificar valores extremos y evaluar su pertinencia.
+
+Segmentación de clientes: clasificación de usuarios por grupos de edad y nivel de uso (bajo, medio y alto).
+
+Análisis ejecutivo: interpretación de los resultados y elaboración de recomendaciones comerciales basadas en los hallazgos.
+
+4. Herramientas utilizadas
 
 Python
 
@@ -29,46 +45,50 @@ Seaborn
 
 Jupyter Notebook
 
-Análisis realizado
+GitHub
 
-Exploración y limpieza de datos.
+5. Cómo ejecutar el proyecto
 
-Análisis de valores faltantes y registros inconsistentes.
+El análisis se encuentra documentado en el notebook analisis_connectatel.ipynb.
 
-Análisis estadístico y visualización de variables.
+Para ejecutarlo:
 
-Identificación y evaluación de valores atípicos.
+Acceder al repositorio de GitHub.
 
-Segmentación de clientes por edad y nivel de uso.
+Abrir el archivo analisis_connectatel.ipynb.
 
-Elaboración de conclusiones y recomendaciones estratégicas.
+Seleccionar la opción para abrirlo en Google Colab o descargarlo y cargarlo directamente en Colab.
 
-Principales hallazgos
+Asegurarse de contar con los tres archivos CSV (plans.csv, users_latam.csv y usage.csv).
 
-El segmento de adultos representa aproximadamente el 49,1% de los clientes.
+Cargar los datasets en el entorno de ejecución y verificar que las rutas de lectura coincidan con su ubicación.
 
-El 73,6% de los usuarios pertenece al segmento de uso medio.
+Ejecutar las celdas del notebook en orden, desde la importación de librerías hasta las conclusiones finales.
 
-Los patrones de uso medio predominan en los tres grupos de edad.
+6. Guía de reproducción
 
-Se identificaron usuarios con niveles elevados de consumo, que podrían representar oportunidades para ofrecer paquetes adicionales o beneficios personalizados.
+Para reproducir los resultados:
 
-Recomendaciones
+Utilizar Python 3 y tener instaladas las librerías Pandas, NumPy, Matplotlib y Seaborn.
 
-Diseñar estrategias de fidelización según los segmentos identificados.
+Disponer de los tres datasets originales.
 
-Evaluar opciones comerciales para clientes de bajo consumo.
+Mantener la estructura y los nombres de los archivos o actualizar las rutas correspondientes en el notebook.
 
-Considerar paquetes adicionales para usuarios de alto consumo.
+Ejecutar todas las celdas secuencialmente para reproducir la limpieza, transformación, análisis, visualizaciones y segmentación.
 
-Personalizar las ofertas de acuerdo con los hábitos de uso de los clientes.
+Revisar la sección final del notebook para consultar los hallazgos y recomendaciones comerciales.
 
-Estructura del proyecto
+7. Principales hallazgos
 
-connectatel-telecom-analysis/
-----analisis_connectatel.ipynb
-----README.md
+Los adultos representan el grupo de edad más numeroso, con aproximadamente el 49,1% de los usuarios.
 
-Autoría
+El 73,6% de los clientes pertenece al segmento de uso medio.
+
+El uso medio predomina en los tres grupos de edad.
+
+Se identificaron usuarios con niveles elevados de consumo, que representan oportunidades para evaluar beneficios y paquetes adicionales.
+
+8. Autoría
 
 Proyecto desarrollado como parte de la formación en análisis de datos de TripleTen.
