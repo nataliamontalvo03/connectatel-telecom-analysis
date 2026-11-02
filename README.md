@@ -66,9 +66,8 @@ Personalizar las ofertas de acuerdo con los hábitos de uso de los clientes.
 Estructura del proyecto
 
 connectatel-telecom-analysis/
-│
-├── analisis_connectatel.ipynb
-└── README.md
+----analisis_connectatel.ipynb
+----README.md
 
 Autoría
 
